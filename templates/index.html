@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Phishing URL Detector</title>
+    <style>
+        body {
+            background-image: url('background.jpg'); /* Update the image file name and path */
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-color: rgba(32, 31, 31, 0.7);
+
+        }
+
+        h1, p, form {
+            /* background-color: rgba(250, 248, 248, 0.7); */
+            padding: 20px;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Phishing URL Detector</h1>
+    <p>Enter a URL to check if it's a phishing URL:</p>
+    
+    <form method="post" action="/predict">
+        <input type="text" name="url" placeholder="Enter URL" required>
+        <button type="submit">Check</button>
+    </form>
+
+    <div id="result">
+        {% if result %}
+        <p>Predicted Label: {{ result }}</p>
+        {% endif %}
+        
+        {% if error %}
+        <p>Error: {{ error }}</p>
+        {% endif %}
+    </div>
+</body>
+</html>
