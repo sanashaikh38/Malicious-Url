@@ -8,10 +8,10 @@ The mail goal is to predict whether the domains are real or malicious.
 Approach: The classical machine learning tasks like Data Exploration, Data Cleaning,
 Feature Engineering, Model Building and Model Testing. Try out different machine
 learning algorithms that’s best fit for the above case.
-For Feature Engineering show:-
+For Feature Engineering show:- <br>
 1. URL-Based Features
 2. Domain-Based Features
 3. Page-Based Features
-4. Content-Based Features
+4. Content-Based Features<br>
 Results: You have to build a solution that should able to predict whether the domain is
 Phishing  or Benign or Defecement.
